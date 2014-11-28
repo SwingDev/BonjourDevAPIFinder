@@ -1,9 +1,9 @@
 //
-//  LookForDevServersViewController.h
-//  DogUber
+//  LookForDevServersViewController.m
+//  Pods
 //
 //  Created by Tomek Kopczuk on 28.11.2014.
-//  Copyright (c) 2014 BladePolska. All rights reserved.
+//
 //
 
 #import <UIKit/UIKit.h>
