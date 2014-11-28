@@ -84,12 +84,12 @@
 #pragma mark - API registration
 - (void)addApiService:(NSString *)name identifier:(NSString *)identifier
 {
+#if FB_TWEAK_ENABLED
     NSString *tweakIdentifierPrefix = @"com.tweaks.bonjourdevapifinder";
 
     FBTweak *browseActionTweak = [[FBTweak alloc] initWithIdentifier:[@[tweakIdentifierPrefix, identifier, @"browse"] componentsJoinedByString:@"."]];
     browseActionTweak.name = @"Browse";
     browseActionTweak.defaultValue = ^{
-        NSString *advPrefix = [[_advertisedPrefix substringToIndex:15] lowercaseString];
         LookForDevServersViewController *browseViewController = [[LookForDevServersViewController alloc] initWithApiName:name
                                                                                                         andAPIIdentifier:identifier];
 
@@ -125,17 +125,20 @@
                               @"useDevId": useDevTweak.identifier,
                               @"devApiId": devApiTweak.identifier,
                               };
+#endif
 }
 
 #pragma mark - API address retrieval
 - (NSString *)apiAddressForIdentifier:(NSString *)identifier defaultAPIAddress:(NSString*)defaultAddress
 {
+#if FB_TWEAK_ENABLED
     BOOL useDevelopmentServer   = [[self useDevTweakForIdentifier:identifier].currentValue boolValue];
     NSString *developmentApiURL = [self devUrlTweakForIdentifier:identifier].currentValue;
     
     if (useDevelopmentServer && developmentApiURL) {
         return developmentApiURL;
     }
+#endif
     
     return defaultAddress;
 }
