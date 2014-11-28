@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="BDAFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtG-3c-Pja">
+                                <rect key="frame" x="32" y="210" width="256" height="148.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Start the attached sample node server first!
+
+Run (from your project root):
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="cd ./Pods/">
+                                        <attributes>
+                                            <font key="NSFont" size="9" name="CourierNewPSMT"/>
+                                            <font key="NSOriginalFont" size="12" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="2"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="BonjourDevAPIFinder/">
+                                        <attributes>
+                                            <font key="NSFont" size="9" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="2"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Server\ Example
+npm install
+node server.js</string>
+                                        <attributes>
+                                            <font key="NSFont" size="9" name="CourierNewPSMT"/>
+                                            <font key="NSOriginalFont" size="12" name="CourierNewPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="2"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="2"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Shake to show the Developer menu!">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ec2-oU-MIw">
+                                <rect key="frame" x="132" y="137" width="156" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" misplaced="YES" text="Using API at:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6e-eN-N1V">
+                                <rect key="frame" x="32" y="143" width="84" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mtG-3c-Pja" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="0q5-Ia-pxx"/>
+                            <constraint firstAttribute="centerY" secondItem="mtG-3c-Pja" secondAttribute="centerY" id="4zM-b4-ody"/>
+                            <constraint firstItem="mtG-3c-Pja" firstAttribute="top" secondItem="M6e-eN-N1V" secondAttribute="bottom" constant="50" id="FEh-fp-2Bx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mtG-3c-Pja" secondAttribute="trailing" constant="16" id="ScQ-tw-HnG"/>
+                            <constraint firstItem="M6e-eN-N1V" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="aPY-oa-vYt"/>
+                            <constraint firstItem="Ec2-oU-MIw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M6e-eN-N1V" secondAttribute="trailing" constant="16" id="jXB-zP-c2t"/>
+                            <constraint firstAttribute="centerX" secondItem="mtG-3c-Pja" secondAttribute="centerX" id="pdX-hm-olm"/>
+                            <constraint firstItem="Ec2-oU-MIw" firstAttribute="leading" secondItem="M6e-eN-N1V" secondAttribute="trailing" priority="999" constant="16" id="qUx-oR-WiJ"/>
+                            <constraint firstItem="Ec2-oU-MIw" firstAttribute="baseline" secondItem="M6e-eN-N1V" secondAttribute="baseline" id="uKw-Jp-Quf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ec2-oU-MIw" secondAttribute="trailing" constant="16" id="yuL-df-8kI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="apiAddressLabel" destination="Ec2-oU-MIw" id="HMs-8b-48M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

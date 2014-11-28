@@ -1,0 +1,19 @@
+{
+  "name": "bonjour-dev-api-finder-server-example",
+  "version": "0.1.0",
+  "author": "Tomek Kopczuk <tkopczuk@gmail.com>",
+  "contributors": [
+    {
+      "name": "Tomek Kopczuk",
+      "email": "tkopczuk@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mdns": "^2.2.2"
+  },
+  "private": true,
+  "license": "MIT"
+}

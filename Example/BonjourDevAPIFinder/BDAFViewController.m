@@ -6,24 +6,37 @@
 //  Copyright (c) 2014 Tomek Kopczuk. All rights reserved.
 //
 
+#import <BonjourDevAPIFinder/BonjourDevAPIFinder.h>
+
 #import "BDAFViewController.h"
 
 @interface BDAFViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *apiAddressLabel;
 
 @end
 
 @implementation BDAFViewController
 
++ (NSString*)baseAPIAddress
+{
+    return [BonjourDevAPIFinder.sharedInstance apiAddressForIdentifier:@"example"
+                                                     defaultAPIAddress:@"api.example.com"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [BonjourDevAPIFinder.sharedInstance addApiService:@"API server"
+                                           identifier:@"example"];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewWillAppear:animated];
+    
+    [self apiAddressLabel].text = [BDAFViewController baseAPIAddress];
 }
 
 @end

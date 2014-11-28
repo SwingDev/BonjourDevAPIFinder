@@ -1,38 +1,32 @@
-#
-# Be sure to run `pod lib lint BonjourDevAPIFinder.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "BonjourDevAPIFinder"
   s.version          = "0.1.0"
-  s.summary          = "A short description of BonjourDevAPIFinder."
+  s.summary          = "BonjourDevAPIFinder lets you find your local development API servers automatically and choose it instead of the production API in run-time."
   s.description      = <<-DESC
-                       An optional longer description of BonjourDevAPIFinder
+                       BonjourDevAPIFinder uses Tweaks.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       You need to make sure Tweaks have a way to be opened (see [Tweaks docs](https://github.com/facebook/Tweaks)).
+
+                       See example project for usage.
+                       Sample Bonjour-enabled node server project attached in the `Server Example` folder.
+
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BonjourDevAPIFinder"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/swingdev/BonjourDevAPIFinder"
   s.license          = 'MIT'
   s.author           = { "Tomek Kopczuk" => "tkopczuk@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BonjourDevAPIFinder.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/swingdev/BonjourDevAPIFinder.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/tkopczuk'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
   s.resource_bundles = {
-    'BonjourDevAPIFinder' => ['Pod/Assets/*.png']
+    'BonjourDevAPIFinder' => []
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+
+  s.dependency 'Tweaks', '~> 1.1'
+
 end

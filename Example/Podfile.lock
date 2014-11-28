@@ -1,0 +1,17 @@
+PODS:
+  - BonjourDevAPIFinder (0.1.0):
+    - Tweaks (~> 1.1)
+  - Tweaks (1.1.0)
+
+DEPENDENCIES:
+  - BonjourDevAPIFinder (from `../`)
+
+EXTERNAL SOURCES:
+  BonjourDevAPIFinder:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BonjourDevAPIFinder: 0cd207cfed023aee9a7963232a6c2a2742f8b775
+  Tweaks: 05b197d4a1247288f576587546bc1932189d8c98
+
+COCOAPODS: 0.35.0
