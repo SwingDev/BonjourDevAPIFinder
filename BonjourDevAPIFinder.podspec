@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BonjourDevAPIFinder"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "BonjourDevAPIFinder lets you find your local development API servers automatically and choose it instead of the production API in run-time."
   s.description      = <<-DESC
                        BonjourDevAPIFinder uses Tweaks.
